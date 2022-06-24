@@ -17,6 +17,7 @@ jobs:
     steps:
       - run: echo world
       - run: echp "My pipeline id is << pipeline.id >> and my git branch is << pipeline.git.branch >>."
+      - run: echo ${MY_NAME}
 workflows:
   # Name the workflow "welcome"
   welcome:
